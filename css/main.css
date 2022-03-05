@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "logo";
+  src: url("../Demo_Fonts/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf");
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form {
+  width: 100%;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 2em 4em;
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #00000033;
+  background-color: #fff;
+}
+
+.form__logo {
+  width: 70%;
+  padding-bottom: 2em;
+}
+
+.form__logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.form__label {
+  width: 100%;
+  padding: 0.8em 0.5em;
+  margin: 0.2em;
+  border: 1px solid #00000033;
+  border-radius: 3px;
+  background-color: #fafafa;
+  outline: none;
+}
+
+.form__label:focus {
+  border: 1px solid #00000068;
+}
+
+.form__label-btn {
+  width: 100%;
+  margin: .8em 0 1.2em;
+  padding: 0.5em;
+  font-weight: 700;
+  color: #fff;
+  background-color: #83b4ff;
+  border: none;
+  border-radius: 4px;
+}
+
+.form__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.form__text-or {
+  padding: 0 1.5em;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #8e8e8e;
+}
+
+.form__text-line {
+  height: 1px;
+  width: 100%;
+  background-color: #bababa;
+}
+
+.form__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__links > a {
+  text-decoration: none;
+  padding-top: 1.3em;
+}
+
+.form__links-fb {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #385185;
+}
+
+.form__links-fb span {
+  position: relative;
+  top: 2px;
+  font-size: 2rem;
+  margin-right: 0.4em;
+}
+
+.form__links-forgot {
+  font-size: 1.1rem;
+  color: #385185;
+}
+
+.form__account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0.4em;
+  font-size: 1.4rem;
+}
+
+.form__account-link {
+  margin-left: 0.5em;
+  font-weight: 600;
+  color: #27a2d7;
+  text-decoration: none;
+}
+
+.links {
+  text-align: center;
+}
+
+.links__text {
+  font-size: 1.5rem;
+  padding: 1em 0 1.5em;
+}
+
+.links__app {
+  padding: 0 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.links__app-appstore {
+  margin-right: 1em;
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .form {
+    border: none;
+    background-color: #fafafa;
+  }
+}
+/*# sourceMappingURL=main.css.map */

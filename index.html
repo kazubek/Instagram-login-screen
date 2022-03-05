@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ekran Logowania</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/3038c72b47.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<form class="form">
+				<div class="form__logo">
+					<img
+						src="./img/800px-Instagram_logo.svg.png"
+						alt=""
+						class="form__logo-img"
+					/>
+				</div>
+
+				<input
+					class="form__label"
+					placeholder="Phone number, username, or email "
+					type="email"
+				/>
+				<input class="form__label" placeholder="Password" type="password" />
+
+				<button class="form__label-btn" type="submit">Log In</button>
+
+				<div class="form__text">
+					<div class="form__text-line"></div>
+					<div class="form__text-or">OR</div>
+					<div class="form__text-line"></div>
+				</div>
+				<div class="form__links">
+					<a class="form__links-fb" href="#">
+						<span><i class="fab fa-facebook-square"></i></span>Log in with
+						Facebook</a
+					>
+					<a class="form__links-forgot" href="#">Forgot password?</a>
+				</div>
+			</form>
+			<form class="form">
+				<div class="form__account">
+					<p class="form__account-text">Don't have an account?</p>
+					<a class="form__account-link" href="https://www.instagram.com/accounts/emailsignup/">Sign up</a>
+				</div>
+			</form>
+			<form class="links">
+				<p class="links__text">Get the app.</p>
+				<div class="links__app">
+					<a
+						class="links__app-appstore"
+						href="https://apps.apple.com/app/instagram/id389801252?vt=lo"
+						target="_blank"
+						><img
+							src="./img/180ae7a0bcf7.png"
+							height="40px"
+							alt="App Store link"
+							class="img-link"
+					/></a>
+
+					<a
+						class="links__app-googleplay"
+						href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb&utm_campaign=loginPage&ig_mid=10B0DD26-1AE3-4743-BDC5-13A48A86126C&utm_content=lo&utm_medium=badge"
+						target="_blank"
+						><img
+							src="./img/GooglePlay.png"
+							height="40px"
+							alt="Google Play link"
+							class="img-link"
+					/></a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

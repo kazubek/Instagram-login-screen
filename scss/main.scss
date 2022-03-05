@@ -1,0 +1,165 @@
+@import "./colors";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	font-family: "Roboto", sans-serif;
+	background-color: $body-color;
+}
+html {
+	font-size: 62.5%;
+}
+@font-face {
+	font-family: "logo";
+	src: url("../Demo_Fonts/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf");
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.form {
+	width: 100%;
+	min-width: 250px;
+	max-width: 350px;
+	padding: 2em 4em;
+	margin-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid $border-color;
+	background-color: $background-color;
+
+	&__logo {
+		width: 70%;
+		padding-bottom: 2em;
+		&-img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__label {
+		width: 100%;
+		padding: 0.8em 0.5em;
+		margin: 0.2em;
+		border: 1px solid $border-color;
+		border-radius: 3px;
+		background-color: $body-color;
+		outline: none;
+		&:focus {
+			border: 1px solid $focus-border;
+		}
+		&-btn {
+			width: 100%;
+			margin: .8em 0 1.2em ;
+			padding: 0.5em;
+			font-weight: 700;
+			color: $background-color;
+			background-color: rgb(131, 180, 255);
+			border: none;
+			border-radius: 4px;
+		}
+	}
+
+	&__text {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		
+
+		&-or {
+			padding: 0 1.5em;
+			font-size: 1.4rem;
+			font-weight: 700;
+			color: $text-color;
+		}
+		&-line {
+			height: 1px;
+			width: 100%;
+			background-color: #bababa;
+		}
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& > a {
+			text-decoration: none;
+			padding-top: 1.3em;
+		}
+		&-fb {
+			font-size: 1.5rem;
+			font-weight: 500;
+			color: #385185;
+			
+
+			span {
+				position: relative;
+				top: 2px;
+				font-size: 2rem;
+				margin-right: 0.4em;
+			}
+		}
+		&-forgot {
+			
+			font-size: 1.1rem;
+			color: #385185;
+		}
+	}
+	&__account {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0.4em;
+		font-size: 1.4rem;
+
+		&-link {
+			margin-left: 0.5em;
+			font-weight: 600;
+			color: rgb(39, 162, 215);
+			text-decoration: none;
+		}
+	}
+}
+.links {
+	text-align: center;
+	&__text {
+		font-size: 1.5rem;
+		padding: 1em 0 1.5em;
+	}
+
+	&__app {
+		
+		padding: 0 1.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		&-appstore {
+			margin-right: 1em;
+		}
+	}
+}
+
+
+@media(max-width:450px){
+	.wrapper{
+		justify-content: flex-start;
+	}
+	.form{
+		border: none;
+		background-color:$body-color ;
+	}
+}
